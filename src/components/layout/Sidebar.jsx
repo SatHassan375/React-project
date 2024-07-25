@@ -10,10 +10,10 @@ const Sidebar = () => {
       </a>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
-        {links.map((e,idx) => {
+        {links.map((e, idx) => {
           return (
             <li className="nav-item">
-              <a href="#" className={'nav-link' }  aria-current="page">
+              <a href="#" className={'text-decoration-none nav-link text-white' + ' ' + (idx === 0 ? 'active' : 'a')} aria-current="page">
                 <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#home"></use></svg>
                 {e.LinkName}
               </a>
